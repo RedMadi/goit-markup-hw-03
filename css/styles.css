@@ -1,3 +1,17 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -11,6 +25,16 @@ body {
   --filter-background: #f4f4fd;
   --main-page-background: #ffffff;
 }
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1158px;
+}
 .list {
   list-style: none;
 }
@@ -18,9 +42,19 @@ body {
   text-decoration: none;
 }
 /*Header*/
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+}
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -32,11 +66,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  margin-right: 76px;
 }
 .span-logo {
   color: var(--title-color);
 }
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-item {
 }
@@ -53,6 +90,10 @@ body {
 }
 .address {
   font-style: normal;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 .header-email-phone {
   font-family: "Roboto", sans-serif;
@@ -71,14 +112,20 @@ body {
 /*Studio page main*/
 .hero-section {
   background-color: var(--title-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #ffffff;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -91,12 +138,21 @@ body {
   color: #ffffff;
   cursor: pointer;
   background-color: var(--logo-color);
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
-
+.section-features {
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+}
 .feature-name {
   font-weight: 500;
   font-size: 20px;
@@ -110,6 +166,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.work-examples {
+}
+.examples-list {
+  display: flex;
+  gap: 24px;
+}
+.examples-item {
+  width: calc((100% - 48px) / 3);
+}
 .examples-title {
   font-weight: 700;
   font-size: 36px;
@@ -118,12 +183,21 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--title-color);
+  margin-bottom: 72px;
 }
 .section-contacts {
   background-color: #f4f4fd;
+  padding: 120px 156px;
+}
+.contacts-list {
+  display: flex;
+  gap: 24px;
 }
 .contacts-items {
   background-color: #ffffff;
+  width: calc ((100% - 72px) / 4);
+  border: 1px solid #e7e9fc;
+  border-radius: 0px 0px 4px 4px;
 }
 .contacts-title {
   font-weight: 700;
@@ -133,6 +207,10 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--title-color);
+  margin-bottom: 72px;
+}
+.card-content {
+  padding: 32px 16px;
 }
 .contact-name {
   font-weight: 500;
@@ -152,6 +230,11 @@ body {
 /*Footer*/
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-logo {
+  margin-bottom: 16px;
 }
 .footer-text {
   font-weight: 400;
@@ -159,26 +242,47 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  display: block;
+  width: 264px;
 }
 .span-logo-footer {
   color: #f4f4fd;
 }
 /*Portfolio*/
 .filter {
+  display: flex;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
 }
+.filter-list {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.filter-item-card {
+  width: calc((100% - 48px) / 3);
+}
+
 .filter-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--logo-color);
   cursor: pointer;
   background-color: var(--filter-background);
+  padding: 12px 24px;
+  min-width: 96px;
+  min-height: 48px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -197,4 +301,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+.portfolio-card-content {
+  width: 300px;
 }
