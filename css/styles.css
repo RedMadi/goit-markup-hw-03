@@ -252,15 +252,13 @@ body {
 .filter {
   display: flex;
   gap: 24px;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
   justify-content: center;
 }
 .filter-list {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
-  margin-bottom: 120px;
 }
 .filter-item-card {
   width: calc((100% - 48px) / 3);
