@@ -209,9 +209,9 @@ body {
   color: var(--title-color);
   margin-bottom: 72px;
 }
-.card-content {
+/*.card-content {
   padding: 32px 16px;
-}
+}*/
 .contact-name {
   font-weight: 500;
   font-size: 20px;
@@ -219,6 +219,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--title-color);
+  padding-top: 32px;
 }
 .contact-position {
   font-weight: 400;
@@ -226,6 +227,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 /*Footer*/
 .footer {
@@ -262,6 +265,7 @@ body {
 }
 .filter-item-card {
   width: calc((100% - 48px) / 3);
+  width: 360px;
 }
 
 .filter-button {
@@ -293,13 +297,18 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-left: 16px;
 }
 .item-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
-.portfolio-card-content {
-  width: 300px;
-}
+/*.portfolio-card-content {
+  padding: 32px 0;
+}*/
